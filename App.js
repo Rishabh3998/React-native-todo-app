@@ -1,4 +1,4 @@
-import { Button, Text, TextInput, View } from 'react-native';
+import { Button, StatusBar, Text, TextInput, View } from 'react-native';
 import { styles } from './styles/styles';
 import GoalList from './components/GoalList';
 import { useEffect, useState } from 'react';
@@ -22,6 +22,10 @@ export default function App() {
 
   return (
     <View style={styles.appContainer}>
+      <StatusBar />
+      <View>
+        <Text style={styles.appHeading}>TODO APP</Text>
+      </View>
       <View style={styles.inputContainer}>
         <TextInput
           placeholder="Enter goal"
